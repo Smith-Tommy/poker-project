@@ -12,4 +12,4 @@ def test_round_winner_deterministic(monkeypatch):
     game.shuffle_and_deal()
     game.evaluate_players()
     winners = game.winners()
-    assert [w.name for w in winners] == ["P1"]
+    assert [w.name for w in winners] == ["P2"]

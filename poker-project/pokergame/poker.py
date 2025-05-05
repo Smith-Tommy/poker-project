@@ -140,14 +140,9 @@ class TexasHoldEmGame:
         for _ in range(2):
             for p in self.players:
                 p.hole.append(self.deck.pop())
-       
-        self.deck.pop()
+    
         self.board.extend(self._deal_n(3))
-        
-        self.deck.pop()
         self.board.extend(self._deal_n(1))
-       
-        self.deck.pop()
         self.board.extend(self._deal_n(1))
 
     def _deal_n(self, n: int) -> List[Card]:
