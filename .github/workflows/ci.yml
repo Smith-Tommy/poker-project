@@ -15,8 +15,10 @@ jobs:
       run: |
         ls -R
     - name: Run unit + integration tests with coverage
+      env:
+        PYTHONPATH: .
       run: |
-        PYTHONPATH=$(pwd) python -m pytest pokergame --cov=pokergame --cov-report=xml --cov-fail-under=75
+        python -m pytest pokergame --cov=pokergame --cov-report=xml --cov-fail-under=75
     - name: Build sdist & wheel
       run: |
         python -m build
