@@ -1,7 +1,7 @@
 import subprocess, sys, textwrap
 
 def test_cli_quick_exit(tmp_path):
-    cmd = [sys.executable, "-m", "poker.poker"]
+    cmd = [sys.executable, "-m", "pokergame.poker"]
     # feed: 2 players → immediately quit at replay prompt
     user_input = textwrap.dedent("""\
         2
