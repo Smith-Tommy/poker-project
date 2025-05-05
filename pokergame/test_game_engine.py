@@ -1,4 +1,8 @@
 import random, itertools
+import sys
+import os
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 from poker import TexasHoldEmGame, create_deck
 
 def test_shuffle_and_deal_removes_cards():

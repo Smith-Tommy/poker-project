@@ -1,4 +1,8 @@
 import itertools
+import sys
+import os
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 from poker import Card, create_deck, RANK_ORDER, SUITS
 
 def test_card_ordering():
