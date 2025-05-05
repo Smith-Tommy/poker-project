@@ -15,7 +15,7 @@ jobs:
       run: |
         PROJ_NEW_PATH=$(python -c "print('${{github.action_path}}'.replace('./.', '.'))")
         echo "PROJ_NEW_PATH=$PROJ_NEW_PATH" >> $GITHUB_ENV
-    - run: python -m pip install -r requirements.txt
+    - run: python -m pip install -r poker-project/requirements.txt
     - name: Debug directory structure
       run: |
         ls -R
