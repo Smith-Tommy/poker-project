@@ -13,6 +13,6 @@ jobs:
     - run: python -m pip install -r requirements.txt
     - name: Run unit + integration tests with coverage
       run: |
-        python -m pytest pokergame --cov=pokergame --cov-report=xml --cov-fail-under=75
+        PYTHONPATH=$(pwd) python -m pytest pokergame --cov=pokergame --cov-report=xml --cov-fail-under=75
     - name: Build sdist & wheel
       run: python -m build
