@@ -1,9 +1,8 @@
 import sys
 import os
-import pytest
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from poker import (
+from pokergame.poker import (
     Card, score_five_cards, evaluate_7cards, HAND_RANKS, RANK_ORDER
 )
 

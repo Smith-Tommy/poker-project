@@ -1,11 +1,10 @@
 import itertools
 import sys
 import os
-import pytest
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from poker import Card, create_deck, RANK_ORDER, SUITS
+from pokergame.poker import Card, create_deck, RANK_ORDER, SUITS
 
 def test_card_ordering():
     low, high = Card("2", "♠"), Card("A", "♠")

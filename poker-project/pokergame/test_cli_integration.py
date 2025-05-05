@@ -1,5 +1,4 @@
 import subprocess, sys, textwrap
-import pytest
 
 def test_cli_quick_exit(tmp_path):
     cmd = [sys.executable, "-m", "pokergame.poker"]
