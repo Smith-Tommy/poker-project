@@ -1,5 +1,5 @@
 import random
-from poker.poker import TexasHoldEmGame
+from poker import TexasHoldEmGame
 
 def test_round_winner_deterministic(monkeypatch):
     rng = random.Random(42)

@@ -1,5 +1,5 @@
 import itertools
-from poker.poker import Card, create_deck, RANK_ORDER, SUITS
+from poker import Card, create_deck, RANK_ORDER, SUITS
 
 def test_card_ordering():
     low, high = Card("2", "♠"), Card("A", "♠")

@@ -1,5 +1,5 @@
 import random, itertools
-from poker.poker import TexasHoldEmGame, create_deck
+from poker import TexasHoldEmGame, create_deck
 
 def test_shuffle_and_deal_removes_cards():
     rng = random.Random(0)

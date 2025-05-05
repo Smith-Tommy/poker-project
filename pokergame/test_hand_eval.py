@@ -1,4 +1,4 @@
-from poker.poker import (
+from poker import (
     Card, score_five_cards, evaluate_7cards, HAND_RANKS, RANK_ORDER
 )
 

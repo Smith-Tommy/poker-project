@@ -1,7 +1,7 @@
 .PHONY: test dist
 
 test:
-	PYTHONPATH=. pytest --cov=poker --cov-report=term-missing
+	PYTHONPATH=. pytest pokergame --cov=pokergame --cov-report=term-missing
 
 dist:
-	\tpython -m build
+	python -m build
